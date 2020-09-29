@@ -120,15 +120,7 @@ namespace _1111111
                 var ESTable = Helper.GetTableFromPathByIndex(parth2, 1);
 
                     //var Docum = Document.ParseDoc(MRSTable);
-                    var EsDocum = EsDocument.ParseEs(ESTable);
-
-                    
-
-
-                  
-
-                    
-
+                    var EsDocum = EsDocument.ParseEs(ESTable);   
 
                     var group1 = (from o in Docum
                                   group o by o.Ls into g
@@ -239,10 +231,6 @@ namespace _1111111
                      }).ToList();
 
                 var FullOuter = leftOuterJoin.Union(RightOuterJoin).Distinct().ToList();
-
-
-
-
 
                 #endregion
 
