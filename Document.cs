@@ -89,18 +89,6 @@ namespace _1111111
 
             for (int i = 5; i < table.Rows.Count; i++)
             {
-
-
-
-                //var numLs = table.Rows[i][9].ToString();
-                //var res = table.Rows[i][1].ToString();
-
-                //var itogVal = decimal.TryParse(table.Rows[i][itogo].ToString(), out decimal b) ? b : 0;
-
-
-                //var firstVal = decimal.TryParse(table.Rows[i][21].ToString(), out decimal first_b) ? first_b : 0;
-                //var endVal = decimal.TryParse(table.Rows[i][22].ToString(), out decimal end_b) ? end_b : 0;
-
                 var numLs = table.Rows[i][ls].ToString().Replace(" ","").OracleTrim();
                 var numSchet = table.Rows[i][numSch].ToString().Replace(" ","").OracleTrim();
                 var res = table.Rows[i][_res].ToString();
